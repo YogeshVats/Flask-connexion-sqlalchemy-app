@@ -1,3 +1,6 @@
 /venv
 /__pycache__
 second_part/__pycache__/
+second_part/people.db
+third_part/__pycache__/
+third_part/people.db
