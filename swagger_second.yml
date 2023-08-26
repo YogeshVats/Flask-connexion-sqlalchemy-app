@@ -34,7 +34,7 @@ components:
 paths:
   /people:
     get:
-      operationId: "people.read_all"    # operationId must contain a string
+      operationId: "people_second.read_all"    # operationId must contain a string
       tags:
         - "People"
       summary: "Read the list of people"
@@ -43,7 +43,7 @@ paths:
           description: "Successfully read people list"
 
     post:
-      operationId: "people.create"
+      operationId: "people_second.create"
       tags:
         - People
       summary: "Create a person"
@@ -61,7 +61,7 @@ paths:
 
   /people/{lname}:
     get:
-      operationId: "people.read_one"
+      operationId: "people_second.read_one"
       tags:
         - People
       summary: "Read one person"
@@ -74,7 +74,7 @@ paths:
     put:
       tags:
         - People
-      operationId: "people.update"
+      operationId: "people_second.update"
       summary: "Update a person"
       parameters:
         - $ref: "#/components/parameters/lname"
@@ -91,7 +91,7 @@ paths:
     delete:
       tags:
         - People
-      operationId: "people.delete"
+      operationId: "people_second.delete"
       summary: "Delete a person"
       parameters:
         - $ref: "#/components/parameters/lname"
